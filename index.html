@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>داشبورد | سامانه ثبت و پیگیری خرابی</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html" aria-label="صفحه اصلی"><span class="brand-mark"><img src="logo.png" alt="لوگوی سازمان بنادر و دریانوردی"></span></a>
+  <nav class="nav" aria-label="ناوبری اصلی"><a class="active" href="index.html"><span>داشبورد</span></a><a class="" href="register.html"><span>ثبت خرابی</span></a><a class="" href="requests.html"><span>درخواست‌ها</span></a><a class="" href="tracking.html"><span>پیگیری</span></a></nav>
+</header>
+<main><div class="container">
+<section class="hero"><h1>داشبورد سامانه</h1><p class="lead">نمای کلی درخواست‌های خرابی و وضعیت رسیدگی آن‌ها.</p></section>
+<section class="stats">
+<div class="stat"><div class="label">کل درخواست‌ها</div><div class="value" id="countTotal">0</div></div>
+<div class="stat"><div class="label">جدید</div><div class="value" id="countNew">0</div></div>
+<div class="stat"><div class="label">در حال بررسی</div><div class="value" id="countReview">0</div></div>
+<div class="stat"><div class="label">در حال تعمیر</div><div class="value" id="countRepair">0</div></div>
+</section>
+<section class="panel" style="margin-top:18px"><div class="page-head"><div><h2>درخواست‌های اخیر</h2><p class="lead">آخرین درخواست‌های ثبت‌شده در سامانه</p></div><a class="btn" href="register.html">ثبت خرابی جدید</a></div><div id="recentList" class="request-list"></div></section>
+<section class="final-status-wrap" style="margin-top:18px"><div class="panel final-status"><h2>وضعیت نهایی</h2><div class="mini-grid" style="margin-top:14px"><div class="mini"><span class="label">انجام شده</span><strong id="countDone" style="font-size:1.5rem;display:block">0</strong></div><div class="mini"><span class="label">اولویت بالا</span><strong id="highCount" style="font-size:1.5rem;display:block">-</strong></div></div></div></section>
+</div></main>
+<script src="js/script.js"></script>
+</body>
+</html>
